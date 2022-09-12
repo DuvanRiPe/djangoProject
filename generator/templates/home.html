@@ -1,0 +1,33 @@
+{% extends 'layout.html' %}
+{% block content %}
+<form class="form card p-5 m-5" action="password">
+    <h1>
+        Password Generator
+    </h1>
+
+    <label for="length">Select the length of your password</label>
+    <select class="form-select" name="length" id="length">
+        <option value="6">6 characters</option>
+        <option value="7">7 characters</option>
+        <option value="8">8 characters</option>
+        <option value="9">9 characters</option>
+        <option value="10">10 characters</option>
+        <option value="11">11 characters</option>
+        <option value="12">12 characters</option>
+    </select>
+    
+
+    <label for="upperCase">UpperCase</label>
+    <input  type="checkbox" name="uppercase" id="uppercase">
+
+    <label cfor="simbol">Simbolos</label>
+    <input  type="checkbox" name="simbol" id="simbol">
+
+    <label  for="number">Numeros</label>
+    <input  type="checkbox" name="number" id="number">
+    <br>
+    <button type="submit">
+        Generar contraseña
+    </button>
+</form>
+{% endblock %}
